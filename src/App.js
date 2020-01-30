@@ -9,10 +9,12 @@ function App() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
-  function handler(teamName, amount) {
-    teamName === "Lions"
-      ? setHomeScore(homeScore + amount)
-      : setAwayScore(awayScore + amount);
+  function scoreHandler(teamName, amount) {
+    if (teamName === "Lions") {
+      setHomeScore(homeScore + amount);
+    } else if (teamName === "Tigers") {
+      setAwayScore(awayScore + amount);
+    }
   }
 
   return (
@@ -23,8 +25,8 @@ function App() {
       </section>
 
       <section className="buttons">
-        <HomeButtons scores={[homeScore, setHomeScore]} />
-        <AwayButtons scores={[awayScore, setAwayScore]} />
+        <HomeButtons handler={scoreHandler} />
+        <AwayButtons handler={scoreHandler} />
       </section>
     </div>
   );
