@@ -3,6 +3,7 @@ import "./App.css";
 import BottomRow from "./BottomRow";
 import ScoreBoard from "./ScoreBoard";
 import HomeButtons from "./HomeButtons";
+import AwayButtons from "./AwayButtons";
 
 function App() {
   const [homeScore, setHomeScore] = useState(0);
@@ -17,21 +18,7 @@ function App() {
 
       <section className="buttons">
         <HomeButtons scores={[homeScore, setHomeScore]} />
-
-        <div className="awayButtons">
-          <button
-            className="awayButtons__touchdown"
-            onClick={() => setAwayScore(awayScore + 7)}
-          >
-            Away Touchdown
-          </button>
-          <button
-            className="awayButtons__fieldGoal"
-            onClick={() => setAwayScore(awayScore + 3)}
-          >
-            Away Field Goal
-          </button>
-        </div>
+        <AwayButtons scores={[awayScore, setAwayScore]} />
       </section>
     </div>
   );
