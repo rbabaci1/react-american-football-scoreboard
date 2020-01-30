@@ -4,7 +4,6 @@ import BottomRow from "./BottomRow";
 import ScoreBoard from "./ScoreBoard";
 import HomeButtons from "./HomeButtons";
 import AwayButtons from "./AwayButtons";
-import QuarterButtons from "./QuarterButtons";
 
 function App() {
   const [homeScore, setHomeScore] = useState(101);
@@ -24,8 +23,6 @@ function App() {
         <ScoreBoard scores={[homeScore, awayScore]} />
         <BottomRow />
       </section>
-
-      <QuarterButtons />
 
       <section className="buttons">
         <HomeButtons handler={scoreHandler} />

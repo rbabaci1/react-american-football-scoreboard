@@ -76,6 +76,7 @@
 .bottomRow {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   place-items: center;
   height: 20rem;
 }
@@ -116,24 +117,22 @@
   text-align: center;
   color: #fff;
   font-family: "Monaco";
+  align-self: flex-end;
 }
 
 .quarter-btns h2 {
   background: #361036;
   border-radius: 5px;
-  width: 65%;
   margin: auto;
   color: gold;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 .qrt-btn {
-  margin: 10px;
+  margin: 0 20px;
   background: #414141;
-  height: 35px;
-  width: 35px;
   display: inline-block;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 4px;
   cursor: pointer;
 }
