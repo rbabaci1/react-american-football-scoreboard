@@ -6,7 +6,7 @@ function AwayButtons(props) {
       <button
         className="awayButtons__touchdown"
         onClick={() => {
-          props.handler("Warriors", 3);
+          props.handler("Utah Jazz", 3);
         }}
       >
         Away 3 points shot
@@ -14,7 +14,7 @@ function AwayButtons(props) {
       <button
         className="awayButtons__fieldGoal"
         onClick={() => {
-          props.handler("Warriors", 2);
+          props.handler("Utah Jazz", 2);
         }}
       >
         Away 2 points shot

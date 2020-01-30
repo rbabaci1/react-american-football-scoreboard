@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="container">
       <h1 id="kobe">
-        RIP Kobe <span>♥️</span> 🏀 "August 1978 - January 2020"
+        RIP Kobe <span>♥️ 🏀 </span> "August 1978 - January 2020"
       </h1>
       <section className="scoreboard">
         <ScoreBoard scores={[homeScore, awayScore]} />
