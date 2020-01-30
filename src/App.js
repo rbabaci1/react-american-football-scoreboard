@@ -9,6 +9,12 @@ function App() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
+  function handler(teamName, amount) {
+    teamName === "Lions"
+      ? setHomeScore(homeScore + amount)
+      : setAwayScore(awayScore + amount);
+  }
+
   return (
     <div className="container">
       <section className="scoreboard">
