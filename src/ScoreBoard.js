@@ -8,7 +8,7 @@ function ScoreBoard(props) {
         <div className="home__score">{props.scores[0]}</div>
       </div>
 
-      <div className="timer">24:00</div>
+      <div className="timer">00:08</div>
 
       <div className="away">
         <h2 className="away__name">Utah-J</h2>

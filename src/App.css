@@ -141,3 +141,20 @@
   background: white;
   color: black;
 }
+
+#kobe {
+  color: #fff;
+  text-align: center;
+  font-family: "Monaco";
+  padding: 15px 0;
+}
+
+#kobe:hover {
+  background: linear-gradient(to left, #d4af37 30%, #660066 70%);
+  cursor: pointer;
+  color: gold;
+}
+
+#kobe span {
+  color: rgb(209, 19, 19);
+}
