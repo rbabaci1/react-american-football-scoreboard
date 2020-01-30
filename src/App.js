@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 import ScoreBoard from "./ScoreBoard";
+import HomeButtons from "./HomeButtons";
 
 function App() {
   const [homeScore, setHomeScore] = useState(0);
@@ -15,20 +16,7 @@ function App() {
       </section>
 
       <section className="buttons">
-        <div className="homeButtons">
-          <button
-            className="homeButtons__touchdown"
-            onClick={() => setHomeScore(homeScore + 7)}
-          >
-            Home Touchdown
-          </button>
-          <button
-            className="homeButtons__fieldGoal"
-            onClick={() => setHomeScore(homeScore + 3)}
-          >
-            Home Field Goal
-          </button>
-        </div>
+        <HomeButtons scores={[homeScore, setHomeScore]} />
 
         <div className="awayButtons">
           <button
