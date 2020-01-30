@@ -6,18 +6,18 @@ function AwayButtons(props) {
       <button
         className="awayButtons__touchdown"
         onClick={() => {
-          props.handler("Tigers", 7);
+          props.handler("Warriors", 3);
         }}
       >
-        Away Touchdown
+        Away 3 points shot
       </button>
       <button
         className="awayButtons__fieldGoal"
         onClick={() => {
-          props.handler("Tigers", 3);
+          props.handler("Warriors", 2);
         }}
       >
-        Away Field Goal
+        Away 2 points shot
       </button>
     </div>
   );

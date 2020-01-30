@@ -6,18 +6,18 @@ function HomeButtons(props) {
       <button
         className="homeButtons__touchdown"
         onClick={() => {
-          props.handler("Lions", 7);
+          props.handler("Lakers", 3);
         }}
       >
-        Home Touchdown
+        Home 3 points shot
       </button>
       <button
         className="homeButtons__fieldGoal"
         onClick={() => {
-          props.handler("Lions", 3);
+          props.handler("Lakers", 2);
         }}
       >
-        Home Field Goal
+        Home 2 points shot
       </button>
     </div>
   );

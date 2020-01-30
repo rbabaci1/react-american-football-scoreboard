@@ -4,15 +4,16 @@ import BottomRow from "./BottomRow";
 import ScoreBoard from "./ScoreBoard";
 import HomeButtons from "./HomeButtons";
 import AwayButtons from "./AwayButtons";
+import QuarterButtons from "./QuarterButtons";
 
 function App() {
-  const [homeScore, setHomeScore] = useState(0);
-  const [awayScore, setAwayScore] = useState(0);
+  const [homeScore, setHomeScore] = useState(101);
+  const [awayScore, setAwayScore] = useState(96);
 
   function scoreHandler(teamName, amount) {
-    if (teamName === "Lions") {
+    if (teamName === "Lakers") {
       setHomeScore(homeScore + amount);
-    } else if (teamName === "Tigers") {
+    } else if (teamName === "Utah Jazz") {
       setAwayScore(awayScore + amount);
     }
   }
@@ -23,6 +24,8 @@ function App() {
         <ScoreBoard scores={[homeScore, awayScore]} />
         <BottomRow />
       </section>
+
+      <QuarterButtons />
 
       <section className="buttons">
         <HomeButtons handler={scoreHandler} />
