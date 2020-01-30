@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
+import ScoreBoard from "./ScoreBoard";
 
 function App() {
   const [homeScore, setHomeScore] = useState(0);
@@ -9,18 +10,7 @@ function App() {
   return (
     <div className="container">
       <section className="scoreboard">
-        <div className="topRow">
-          <div className="home">
-            <h2 className="home__name">Lions</h2>
-            <div className="home__score">{homeScore}</div>
-          </div>
-
-          <div className="timer">00:03</div>
-          <div className="away">
-            <h2 className="away__name">Tigers</h2>
-            <div className="away__score">{awayScore}</div>
-          </div>
-        </div>
+        <ScoreBoard scores={[homeScore, awayScore]} />
         <BottomRow />
       </section>
 
