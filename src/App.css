@@ -5,13 +5,19 @@
 
 .scoreboard {
   width: 58%;
-  margin: 10rem auto;
+  margin: 0rem auto;
   background-color: #0b5402;
+  background-image: url(https://static.timesofisrael.com/www/uploads/2020/01/AP_16105145991987-640x400.jpg);
+  background-size: cover;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
   border: 4px solid #aaaaaa;
+  border-top: 4px solid #d4af37;
+  border-left: 4px solid #d4af37;
+  border-bottom: 4px solid #660066;
+  border-right: 4px solid #660066;
 }
 
 .topRow {
@@ -21,8 +27,7 @@
   /* height: 20rem; */
 }
 
-.home,
-.away {
+.home, .away {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -30,30 +35,24 @@
   place-items: center;
   border: 3px solid white;
   border-radius: 0.5rem;
-  width: 15rem;
+  width: 17rem;
 }
 
 .home {
-  background-color: #656565;
+  background: linear-gradient(to left, #d4af37 50%, #660066 50%);
 }
 
 .away {
-  background-color: #af750a;
+  background: linear-gradient(to left, #d4af37 50%, #004383 50%);
 }
 
-.home__name,
-.away__name,
-.down__title,
-.toGo__title,
-.ballOn__title,
-.quarter__title {
+.home__name, .away__name, .down__title, .toGo__title, .ballOn__title, .quarter__title {
   text-transform: uppercase;
   font-size: 3rem;
   padding: 2rem;
 }
 
-.home__score,
-.away__score {
+.home__score, .away__score {
   font-family: "Ozone";
   font-size: 7rem;
   width: 90%;
@@ -71,29 +70,25 @@
   background-color: var(--black);
   border: 2px solid white;
   border-radius: 6px;
+  opacity: 0.6;
 }
 
 .bottomRow {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   place-items: center;
   height: 20rem;
 }
 
-.down,
-.toGo,
-.ballOn,
-.quarter {
+.down, .toGo, .ballOn, .quarter {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
 }
 
-.down__value,
-.toGo__value,
-.ballOn__value,
-.quarter__value {
+.down__value, .toGo__value, .ballOn__value, .quarter__value {
   font-family: "Ozone";
   font-size: 5rem;
   color: var(--red);
@@ -113,10 +108,53 @@
   justify-content: space-around;
 }
 
-.homeButtons__touchdown,
-.homeButtons__fieldGoal,
-.awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.homeButtons__touchdown, .homeButtons__fieldGoal, .awayButtons__touchdown, .awayButtons__fieldGoal {
   margin: 1rem;
   border-radius: 4px;
+}
+
+.quarter-btns {
+  text-align: center;
+  color: #fff;
+  font-family: "Monaco";
+  align-self: flex-end;
+}
+
+.quarter-btns h2 {
+  background: #361036;
+  border-radius: 5px;
+  margin: auto;
+  color: gold;
+  padding: 5px;
+}
+
+.qrt-btn {
+  margin: 0 20px;
+  background: #414141;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qrt-btn:hover {
+  background: white;
+  color: black;
+}
+
+#kobe {
+  color: #fff;
+  text-align: center;
+  font-family: "Monaco";
+  padding: 15px 0;
+}
+
+#kobe:hover {
+  background: linear-gradient(to left, #d4af37 30%, #660066 70%);
+  cursor: pointer;
+  color: gold;
+}
+
+#kobe span {
+  color: rgb(209, 19, 19);
 }
